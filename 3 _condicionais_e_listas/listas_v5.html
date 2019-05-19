@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+<script src="https://unpkg.com/vue"></script>
+
+<style>
+    ul {
+        list-style: none;
+    }
+
+    h1,
+    p {
+        display: inline;
+    }
+</style>
+
+<div id="app">
+    <ul>
+        <li v-for="(cor, i) in cores" :key="cor">{{ i +1}}) {{ cor }}</li>
+    </ul>
+    <button @click="cores.push('branca')">Adicionar</button>
+    <hr>
+    <div v-for="(cor, i) in cores">
+        <h1>{{ cor }}</h1>
+        <p>{{ i }}</p>
+    </div>
+    <hr>
+    <ul>
+        <li v-for="pessoa in pessoas">
+            <div v-for="(valor, chave, index) in pessoa">
+                {{ index + 1 }}) {{ chave }} = {{ valor }}
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <span v-for="n in 30">{{ n }} </span>
+
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            cores: ['vermelho', 'verde ', 'amerelo', 'azul'],
+            pessoas: [
+                { nome: 'Lucas', idade: 29, peso: 75 },
+                { nome: 'Anna', idade: 26, peso: 50 },
+                { nome: 'Bento', idade: 1, peso: 10 },
+            ]
+        }
+    })
+</script>
