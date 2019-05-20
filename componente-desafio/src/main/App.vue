@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import Navigation from "./Navigation";
-import Toolbar from "./Toolbar";
-import Carousel from "./Carousel";
-import Footer from "./Footer";
+import Navigation from "@/components/Navigation";
+import Toolbar from "@/components/Toolbar";
+import Carousel from "@/components/Carousel";
+import Footer from "@/components/Footer";
 
 export default {
   components: {
