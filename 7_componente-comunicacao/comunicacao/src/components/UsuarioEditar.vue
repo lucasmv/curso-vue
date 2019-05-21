@@ -9,11 +9,15 @@
 </template>
 
 <script>
+
+import barramento from '@/barramento'
+
 export default {
     props: ['idade', 'idadeBentoFn'],
     methods:{
         alterarIdade(){
-            this.$emit('idadeMudou', 30);
+            this.idade += 1;
+            barramento.alterarIdate(this.idade);
         }
     }
 }
