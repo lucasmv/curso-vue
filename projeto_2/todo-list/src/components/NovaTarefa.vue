@@ -16,10 +16,10 @@ export default {
         }
     },
     methods: {
-        addTarefa(){
-            this.$emit('tarefaAdicionada', { nome: this.nome });
+        addTarefa() {
+            this.$emit('tarefaAdicionada', { nome: this.nome })
             this.nome = ''
         }
-    },
-};
+    }
+}
 </script>
