@@ -49,8 +49,7 @@ export default {
   },
   methods: {
     addTarefa(tarefa) {
-      const realmenteNovo =
-        this.tarefas.filter(t => t.nome === tarefa.nome).length == 0;
+      const realmenteNovo = this.tarefas.filter(t => t.nome === tarefa.nome).length == 0;
       if (realmenteNovo) {
         this.tarefas.push({
           nome: tarefa.nome,
