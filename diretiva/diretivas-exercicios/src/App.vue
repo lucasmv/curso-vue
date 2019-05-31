@@ -2,14 +2,21 @@
 	<div id="app">
 		<h1>Diretivas</h1>
 		<hr>
-		<p v-text="'Usando diretivas v-text'"></p>
+		<p v-text="'Usando diretivas <strong>v-text</strong>'"></p>
 		<p v-html="'Usando diretiva <strong>v-html</strong>'"></p>
+		<hr>
+		<p v-destaque:fundo.atrasar="'lightblue'">Usando diretiva personalizada</p>
+		<p v-destaque.atrasar="cor">Usando diretiva personalizada</p>
 	</div>
 </template>
 
 <script>
 export default {
-	
+	data() {
+		return {
+			cor:'red'
+		}
+	},
 }
 </script>
 
