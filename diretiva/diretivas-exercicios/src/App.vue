@@ -9,7 +9,7 @@
     <p v-destaque.atrasar="cor">Usando diretiva personalizada</p>
     <hr>
     <p v-destaque-local:fundo.atrasar.alternar="{cor1: 'green', cor2: 'red', atraso: '2000', alternar: '200'}">Usando diretiva personalizada</p>
-    <p v-destaque-local.atrasar="{cor1: 'green', atraso: '5000'}">Usando diretiva personalizada</p>
+    <p v-destaque-local.atrasar="{cor1: 'red', atraso: '5000'}">Usando diretiva personalizada</p>
   </div>
 </template>
 
